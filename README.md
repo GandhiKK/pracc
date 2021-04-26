@@ -1,2 +1,1 @@
-# pracc
-Simulation Of Vision-Based Object Tracking Robot
+# Моделирование движения робота в задаче слежения за движущимся объектом

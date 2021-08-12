@@ -5,10 +5,10 @@ from imageai.Detection import ObjectDetection
 
 detector = ObjectDetection()
 detector.setModelTypeAsYOLOv3()
-detector.setModelPath("yolo.h5")
+detector.setModelPath("models/yolo.h5")
 detector.loadModel()
 
-detections = detector.detectObjectsFromImage(input_image="imgs/rgb1.png", output_image_path="imgs/out.png")
+detections = detector.detectObjectsFromImage(input_image="imgs/rgb.png", output_image_path="imgs/out.png")
 print(len(detections))
 for eachObject in detections:
     if eachObject["name"] == 'sports ball':
